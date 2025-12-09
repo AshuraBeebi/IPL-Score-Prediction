@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Ipl Score</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css"
+rel="stylesheet"
+/>
+</head>
+<body>
+
+{% for m in get_flashed_messages() %}
+<script>alert("{{ m }}");</script>
+{% endfor %} 
+
+      <!-- topbar2  (components-navbar(op) -nav)-->
+      <div class="sticky-top" style="padding-top: 18px;">
+      <nav class="navbar navbar-expand-lg" style="background-color: #05106fe2; margin-top: -20px;">
+        <div class="container-fluid">
+
+          <div class="logo">
+            <img src="../static/images/download_(2).jfif" alt="" style="background-color: white; height: 70px;">
+        </div>
+    
+          <div class="collapse navbar-collapse" id="navbarNav" style="margin-top: -10px; font-weight: 600; gap: 30px;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/" style="color: white; margin-left: 15px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/about" style="color: white; margin-left: 40px;">About</a>
+              </li>
+              
+
+              <a class="navbar-brand" href="/" style="color: white; margin-left: 390px; font-style:italic; font-size: 30px;">IPL SCORE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/predict" style="color: white; margin-left: 250px;">Predict</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/logout" style="color: white; margin-left: 30px;">Logout</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-left: 40px;"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-left: 30px;"><i class="fa-regular fa-user"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; margin-left: 30px;"><i class="fa-solid fa-question"></i></a>
+                    </li>
+                  
+                      </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- image (image op)-->
+    <img src="../static/images/ipl_home.png" class="img-fluid" alt="..." style=" width:1550px; margin-top: -8px;">
+    <!-- text (typography op)-->
+    
+    <h3 style="color:white;  margin-left: 1110px; font-size: 20px; font-weight: 400; font-style: italic;margin-top: -290px;">Cricket's global fan community. Sign up today for exclusive content, priority 
+      ticket access and personalised news sent straight to your email</h3>
+
+    <!-- buttons (button op) -->
+     <div class="bbn" style="margin-top:20px ; margin-left: 1230px;">
+    <button type="button" class="btn"  style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 200; font-size: 18px; color: black; border: 2px solid white; background-color: white;">Join Today For Free</button>
+
+</div>
+
+<!-- image (img-op)) -->
+<img src="../static/images/IPL_ARRIVING.jfif" style="height: 600px; width: 480px; margin-top: 170px; margin-left: 20px;" class="img-thumbnail" alt="...">
+<img src="../static/images/bg.jfif" style="height: 600px; width: 490px; margin-top: 170px;" class="img-thumbnail" alt="...">
+<img src="../static/images/sanju.jfif" style="height: 600px; width: 490px; margin-top: 170px;" class="img-thumbnail" alt="...">
+
+<!-- text (text) -->
+ 
+<div style="margin-top: -110px;  color:white; font-weight: 600;">
+  <p style="font-size:23px; text-align: center;">One of the best in the world:</p>
+  <p style="font-size: 16px; text-align: center;"> Cummins recognises India's game-changer after Perth defeat</p>
+  </div>
+
+  <div style="margin-top: -80px;  color: white; font-weight: 600;">
+    <p style="font-size:23px; margin-left: 110px;">India shatter multiple records </p>
+    <p style="font-size: 16px; margin-left: 98px;">on their way to historic win in Perth Test</p>
+    </div>
+
+  <div style="margin-top: -100px;  color:white; font-weight: 600;">
+    <p style="font-size:23px; text-align: end; margin-right: 130px;">World Test Championship-</p>
+    <p style="font-size: 16px; text-align: end; margin-right: 145px;"> State of Play ahead of 2025 final</p>
+    </div>
+
+
+ <!-- background image (image op) -->
+ <img src="../static/images/pf7runzwvbrijinsvzl7.png"  class="img-fluid" alt="..." style="height: 500px; width:97%; background-color: #030d65e2;
+  margin-left: 20px; margin-top: 20px;">
+  
+
+  <h4 style="font-size: 20px; margin-top: -390px; margin-left: 40px; color:white;">Find the list of tournaments, series and matches <br>that are available to be live-streamed 
+   <br> within your region throughout the year!</h4>
+
+   <div class="bbn" style="margin-top:20px ; margin-left: 110px;">
+    <button type="button" class="btn"  style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 200; font-size: 16px; color: black; border: 2px solid white; background-color: white;">View The TV Guide</button>
+
+</div>
+  
+<br><br><br><br><br>
+  <!-- topbar4(components-navbar(nav)) -->
+  <nav class="navbar navbar-expand-lg " >
+    <div class="container-fluid" >
+    
+      <div class="collapse navbar-collapse" id="navbarNav"  >
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: #030d65e2; font-weight:800; margin-top: 150px;
+            margin-left: 20px; font-size: 35px; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+             'Open Sans', 'Helvetica Neue', sans-serif">Latest News</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- images -->
+  <img src="../static/images/GettyImages-2185482835.jfif" class="img-thumbnail" alt="..."  
+  style="margin-top: 15px; margin-left: 20px; height: 700px; width: 850px;">
+  <!-- <button type="button" class="btn" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; -->
+  <!-- font-weight: 200; color: black; margin-top: 570px; margin-right: 300px;">Men's Sale</button>  -->
+
+<!-- opacity: 0;  -->
+ <!-- overflow: hidden;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0" -->
+
+
+    <!--image flex  -->
+    <img src="../static/images/LEAD_IMAGE_SITE_3.png" class="img-thumbnail" alt="..."  
+    style="margin-top: -350px; margin-left: 20px; height: 320px; width: 550px;">
+
+    <img src="../static/images/GettyImages-2185732232.jfif"class="img-thumbnail" alt="..."  
+    style="margin-top: -400px; margin-left: 890px; height: 320px; width: 550px;">
+
+    <h4 style="font-size: 37px; margin-top: -120px; margin-left: 90px; color:black; font-weight: 650;">A new trophy to be named after ICC Hall </h4>
+    <h4 style="font-size: 20px; margin-top: 10px; margin-left: 110px; color:black; font-weight: 800;">Of Famer Martin Crowe and former England batter Graham Thorpe.</h4>
+
+
+<!-- tables -->
+<table class="table align-middle mb-0 bg-white"style=" margin-top: 60px; padding: 30px;" border="4px solid black">
+  <thead class="bg-light">
+    <tr>
+      <th style="font-size: 20px; color: black;"> T20 - team Rankings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <p class="fw-bold mb-1" style="margin-left: 10px; font-size: 20px;color: #030d65e2; font-weight: 400;">01</p>
+          <img
+              src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7"
+              alt=""
+              style="width: 45px; height: 45px;margin-left: 10px;"
+              
+              />
+             
+          <div class="ms-3">
+           
+            <p class="fw-bold mb-1" style=" font-size: 20px;color: #030d65e2; font-weight: 400;">India</p>
+           
+          </div>
+          
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="font-size: 20px;color: #030d65e2; font-weight: 400;">70</p>
+        
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="font-size: 20px;color: #030d65e2; font-weight: 400;">18747</p>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="font-size: 20px;color: #030d65e2; font-weight: 400;">268</p>
+      </td>
+    </tr>
+    <tr>
+      
+        
+      <td>
+        <div class="d-flex align-items-center">
+            <p class="fw-bold mb-1" style="margin-left: 10px; color: #030d65e2; font-weight: 400;">02</p>
+            <img
+                src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1.png?v=7"
+                alt=""
+                style="width: 45px; height: 45px;margin-left: 10px;"
+                
+                />
+               
+            <div class="ms-3">
+             
+              <p class="fw-bold mb-1" style="color: #030d65e2; font-weight: 400;">Australia</p>
+             
+            </div>
+            
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">48</p>
+          
+        </td>
+        <td>
+          <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">12417</p>
+        </td>
+        <td>
+          <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">259</p>
+        </td>
+      </tr>
+     
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <p class="fw-bold mb-1" style="margin-left: 10px; color: #030d65e2; font-weight: 400;">03</p>
+          <img
+              src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/3.png?v=7"
+              alt=""
+              style="width: 45px; height: 45px;margin-left: 10px;"
+              
+              />
+             
+          <div class="ms-3">
+           
+            <p class="fw-bold mb-1" style="color: #030d65e2; font-weight: 400;">England</p>
+           
+          </div>
+          
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">45</p>
+        
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">11497</p>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">255</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <p class="fw-bold mb-1" style="margin-left: 10px; color: #030d65e2; font-weight: 400;">04</p>
+          <img
+              src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7"
+              alt=""
+              style="width: 45px; height: 45px;margin-left: 10px;"
+              
+              />
+             
+          <div class="ms-3">
+           
+            <p class="fw-bold mb-1" style="color: #030d65e2; font-weight: 400;">West Indies</p>
+           
+          </div>
+          
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">56</p>
+        
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">14060</p>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">251</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <p class="fw-bold mb-1" style="margin-left: 10px; color: #030d65e2; font-weight: 400;">05</p>
+          <img
+              src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/7.png?v=7"
+              alt=""
+              style="width: 45px; height: 45px;margin-left: 10px;"
+              
+              />
+             
+          <div class="ms-3">
+           
+            <p class="fw-bold mb-1" style="color: #030d65e2; font-weight: 400;">South Africa</p>
+           
+          </div>
+          
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">51</p>
+        
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">10201</p>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: #030d65e2; font-weight: 400;">245</p>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+    
+<img src="../static/images/navyblue.jpg" class="img-fluid" alt="..." style="height: 250px; width:100%; 
+margin-top: 40px;">
+<div style="display: flex; flex-direction: row; color: white; margin-top: -220px;  font-size: 20px;">
+  <p style="margin-left: 180px;"> Home</p>
+  <p style="margin-left: 390px;"> Latest Matches</p>
+  <p style="margin-left: 420px;"> Stadium</p>
+</div>
+  
+<div style="display: flex; flex-direction: row; color: white; margin-top: 20px;  font-size: 20px;">
+  <p style="margin-left: 180px;"> Matches</p>
+  <p style="margin-left: 370px;"> Gallery </p>
+  <p style="margin-left: 490px;"> Contact Us</p>
+</div>
+  
+<div style="display: flex; flex-direction: row; color: white; margin-top: 20px;  font-size: 20px;">
+  <p style="margin-left: 180px;"> MITV</p>
+  <p style="margin-left: 400px;"> Shop </p>
+  <p style="margin-left: 510px;"> Latest News</p>
+</div>
+
+<p style=" font-weight: bold; margin-top: 90px; text-align: center;">Copyright 2024 IPL. All rights reserved.</p>
+  
+
+
+
+
+      
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <script src="https://kit.fontawesome.com/fb543370ea.js" crossorigin="anonymous"></script>
+
+     <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.umd.min.js"
+></script>
+</body>
+</html>
+
